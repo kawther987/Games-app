@@ -1,0 +1,109 @@
+:root {
+  --blackColor: #000;
+  --whiteColor: #efe7e7;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+::selection {
+  background-color: var(--blackColor);
+  color: var(--whiteColor);
+}
+header ::selection {
+  background-color: #521a5c;
+  color: #e34890;
+}
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/coffee-business-elements.jpg");
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(3px);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.caption {
+  background-color: transparent;
+  /* backdrop-filter: blur(70px); */
+  border: 1px solid var(--whiteColor);
+  box-shadow: -5px 2px 54px -9px var(--blackColor);
+}
+.caption h1 {
+  text-shadow: 0px 0px 4px var(--blackColor);
+  font-family: "Rubik Bubbles";
+  font-size: 3.125rem;
+}
+.caption h1,
+.caption p,
+.caption a {
+  color: var(--whiteColor);
+}
+.caption a {
+  text-decoration: none;
+  transition: 0.4s all ease-out;
+}
+.caption a:hover {
+  text-decoration: underline;
+}
+.form-control:focus {
+  border-color: unset;
+  box-shadow: unset;
+}
+
+.btn {
+  font-family: "Rubik Bubbles";
+  font-size: 1.5rem;
+}
+
+header {
+  /* background-image: url('../img/coffee-business-elements.jpg'); */
+  background-image: url("../img/elevated-view-flowers-keyboard-pink-backdrop.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: "Rubik Bubbles";
+}
+
+nav {
+  backdrop-filter: blur(8px);
+  box-shadow: -5px 2px 54px -9px #2d392d inset;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.title {
+  /* background-color: #DDD7D4; */
+  /* background-color: transparent; */
+  /* border: 1px solid #2D392D; */
+  backdrop-filter: blur(8px);
+  box-shadow: -5px 2px 54px -9px #2d392d;
+}
+.title h1 {
+  font-size: 50px;
+}
+
+.title h1,
+.title p,
+.title a {
+  color: #521a5c;
+}
+
+@media screen and (max-width: 776px) {
+  #login .caption,
+  #signup .caption,
+  header .title {
+    width: 95% !important;
+  }
+  .caption h1,
+  .title h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

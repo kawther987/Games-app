@@ -1,0 +1,67 @@
+nav {
+  backdrop-filter: blur(8px);
+  box-shadow: -5px 2px 54px -9px #2d392d inset;
+  font-family: "Rubik Bubbles";
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+section {
+  background-image: url("../img/elevated-view-flowers-keyboard-pink-backdrop.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.wrapper {
+  width: 65vmin;
+  height: 70vmin;
+  background-color: #293447;
+}
+.game-details {
+  color: #b8c6dc;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 20px 27px;
+}
+.play-board {
+  background-color: #212837;
+  display: grid;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.play-board .food {
+  background-color: #ff003d;
+}
+.play-board .head {
+  background-color: #60cbff;
+}
+.controls {
+  display: none;
+  justify-content: space-between;
+}
+
+.controls i {
+  padding: 25px 0;
+  color: #b8c6dc;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid #171b26;
+  font-size: 1.3rem;
+  width: calc(100% / 4);
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90vmin;
+    height: 115vmin;
+  }
+  .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  .controls {
+    display: flex;
+  }
+  .controls i {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+}

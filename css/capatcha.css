@@ -1,0 +1,92 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.wrapper {
+  background-image: url("../img/elevated-view-flowers-keyboard-pink-backdrop.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.text-main {
+  color: #c70039;
+}
+
+div:has(> .capatcha-box) {
+  max-height: 70px;
+}
+
+.btn-main {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #c70039;
+  --bs-btn-border-color: #c70039;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #c70039;
+  --bs-btn-hover-border-color: #c70039;
+}
+
+form .btn-main {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input {
+  font-size: 20px;
+  padding-block: 12px !important;
+}
+
+.border-main {
+  border: 2px solid #c70039;
+}
+
+.border-main:focus {
+  box-shadow: none;
+  border: 2px solid #c70039;
+}
+.box {
+  backdrop-filter: blur(8px);
+  box-shadow: -5px 2px 54px -9px #2d392d;
+  border: 2px solid #2d392d;
+}
+.box h2 {
+  letter-spacing: 5px;
+  font-family: "Rubik Bubbles";
+}
+
+.capatcha-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 29px;
+  transform: translate(-50%, -50%);
+  letter-spacing: 20px;
+}
+
+nav {
+  backdrop-filter: blur(8px);
+  box-shadow: -5px 2px 54px -9px #2d392d inset;
+  font-family: "Rubik Bubbles";
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+@media screen and (max-width: 786px) {
+  .box {
+    width: 80% !important;
+  }
+  .capatcha-text {
+    letter-spacing: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .box {
+    width: 95% !important;
+  }
+  .nav-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+}

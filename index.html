@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="./img/permission.png" type="image/x-icon" />
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header
+      class="d-none d-flex justify-content-center align-items-center vh-100"
+    >
+      <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container align-items-baseline">
+          <a class="navbar-brand text-success" href="./index.html"
+            >SMART LOGIN
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars text-success fs-4"> </i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="d-flex list-unstyled gap-3 mx-auto">
+              <li>
+                <a class="text-success text-decoration-none" href="./snake.html"
+                  >Snake</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-success text-decoration-none"
+                  href="./capatcha.html"
+                  >capatcha</a
+                >
+              </li>
+              <li>
+                <a class="text-success text-decoration-none" href="./rgb.html"
+                  >RGB Game</a
+                >
+              </li>
+              <li>
+                <a class="text-success text-decoration-none" href="./tic.html"
+                  >Tic Tac Toc</a
+                >
+              </li>
+            </ul>
+            <button id="btn" class="nav-btn btn btn-outline-success ms-auto">
+              Logout
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="title w-50 text-center rounded rounded-3 p-5">
+        <h1 class="p-5" id="userName">WELCOME Kawther</h1>
+      </div>
+    </header>
+
+    <section class="min-vh-100 d-flex" id="login">
+      <div class="caption w-50 m-auto p-5 text-center rounded rounded-4">
+        <h1 class="py-3">Smart Login System</h1>
+        <div class="form-floating mb-3">
+          <input
+            id="loginEmail"
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input
+            id="loginPass"
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div>
+          <button class="btn btn-outline-light mt-4 mb-2" id="loginBtn">
+            Login
+          </button>
+          <p>Don’t have an account? <a href="#signup">Sign Up</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="min-vh-100 d-flex d-none" id="signup">
+      <div class="caption w-50 m-auto p-5 text-center rounded rounded-4">
+        <h1 class="py-3">Smart Login System</h1>
+        <div class="form-floating mb-3">
+          <input
+            id="signupname"
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">User name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            id="signupEmail"
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input
+            id="signupPass"
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <p id="exist"></p>
+        <div>
+          <button class="btn btn-outline-light mt-4 mb-2" id="signupBtn">
+            sign up
+          </button>
+          <p>You have an account? <a href="#login">Sign in</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- sweet alerlt -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- bootstarap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- main js -->
+    <script src="./js/signup.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

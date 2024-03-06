@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB GAME</title>
+    <link rel="shortcut icon" href="./img/palette.png" type="image/x-icon" />
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/rgb.css" />
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container align-items-baseline">
+        <a class="navbar-brand text-success" href="./index.html"
+          >SMART LOGIN
+        </a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars text-success fs-4"> </i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="d-flex list-unstyled gap-3 mx-auto">
+            <li>
+              <a class="text-success text-decoration-none" href="./snake.html"
+                >Snake</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-success text-decoration-none"
+                href="./capatcha.html"
+                >capatcha</a
+              >
+            </li>
+            <li>
+              <a class="text-success text-decoration-none" href="./rgb.html"
+                >RGB Game</a
+              >
+            </li>
+            <li>
+              <a class="text-success text-decoration-none" href="./tic.html"
+                >Tic Tac Toc</a
+              >
+            </li>
+          </ul>
+          <button id="btn" class="nav-btn btn btn-outline-success ms-auto">
+            Logout
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper vh-100 py-5">
+      <header class="py-5 d-flex flex-column align-items-center gap-3 bg-black">
+        <div class="title text-center">
+          <h1 class="text-uppercase text-white">RGB Game</h1>
+          <h2 class="text-white fs-1" id="rgbSyntax">rgb(255, 255, 255)</h2>
+        </div>
+        <div class="button-group">
+          <button
+            id="easyBtn"
+            class="btn btn-outline-danger me-3 px-4 fs-4 active text-white"
+          >
+            Easy
+          </button>
+          <button
+            id="hardBtn"
+            class="btn btn-outline-danger px-4 fs-4 text-white"
+          >
+            Hard
+          </button>
+        </div>
+      </header>
+
+      <section class="bg-black py-4">
+        <button
+          id="getColorsBtn"
+          class="btn btn-outline-danger text-white rounded-pill d-block mx-auto fs-5 px-4"
+        >
+          GET COLORS
+        </button>
+        <div id="colorsContainer" class="container"></div>
+      </section>
+    </div>
+    <!-- bootstarap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/rgb.js"></script>
+  </body>
+</html>

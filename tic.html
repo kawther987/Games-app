@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Rubik+Doodle+Shadow&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/tic.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+      <div class="container align-items-baseline">
+        <a class="navbar-brand text-success" href="./index.html"
+          >SMART LOGIN
+        </a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars text-success fs-4"> </i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="d-flex list-unstyled gap-3 mx-auto">
+            <li>
+              <a class="text-success text-decoration-none" href="./snake.html"
+                >Snake</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-success text-decoration-none"
+                href="./capatcha.html"
+                >capatcha</a
+              >
+            </li>
+            <li>
+              <a class="text-success text-decoration-none" href="./rgb.html"
+                >RGB Game</a
+              >
+            </li>
+            <li>
+              <a class="text-success text-decoration-none" href="./tic.html"
+                >Tic Tac Toc</a
+              >
+            </li>
+          </ul>
+          <button id="btn" class="nav-btn btn btn-outline-success ms-auto">
+            Logout
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="container game text-black text-center my-5 py-3">
+        <h1 class="title"><span>Tic Tac Toe </span>GAME</h1>
+
+        <div
+          class="box d-flex justify-content-center align-items-center flex-wrap text-white"
+        >
+          <div class="squere" id="item1" onclick="game(this.id)"></div>
+          <div class="squere" id="item2" onclick="game(this.id)"></div>
+          <div class="squere" id="item3" onclick="game(this.id)"></div>
+          <div class="squere" id="item4" onclick="game(this.id)"></div>
+          <div class="squere" id="item5" onclick="game(this.id)"></div>
+          <div class="squere" id="item6" onclick="game(this.id)"></div>
+          <div class="squere" id="item7" onclick="game(this.id)"></div>
+          <div class="squere" id="item8" onclick="game(this.id)"></div>
+          <div class="squere" id="item9" onclick="game(this.id)"></div>
+        </div>
+      </div>
+    </section>
+    <!-- bootstarap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- main js -->
+    <script src="./js/tic.js"></script>
+  </body>
+</html>
