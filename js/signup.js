@@ -106,10 +106,12 @@ function validationName() {
   if (regax.test(text)) {
     signupname.classList.add("is-valid");
     signupname.classList.remove("is-invalid");
+    document.querySelector(".nameMsg").classList.add("d-none");
     return true;
   } else {
     signupname.classList.remove("is-valid");
     signupname.classList.add("is-invalid");
+    document.querySelector(".nameMsg").classList.remove("d-none");
     return false;
   }
 }
@@ -120,10 +122,12 @@ function validationEmail() {
   if (regax.test(text)) {
     signupEmail.classList.add("is-valid");
     signupEmail.classList.remove("is-invalid");
+    document.querySelector(".emailMsg").classList.add("d-none");
     return true;
   } else {
     signupEmail.classList.remove("is-valid");
     signupEmail.classList.add("is-invalid");
+    document.querySelector(".emailMsg").classList.remove("d-none");
     return false;
   }
 }
@@ -134,10 +138,16 @@ function validationPass() {
   if (regax.test(text)) {
     signupPass.classList.add("is-valid");
     signupPass.classList.remove("is-invalid");
+    document.querySelector(".passMsg").classList.remove("d-none");
     return true;
   } else {
     signupPass.classList.remove("is-valid");
     signupPass.classList.add("is-invalid");
+    document.querySelector(".passMsg").classList.remove("d-none");
     return false;
   }
 }
+
+signupname.addEventListener("input", validationName);
+signupEmail.addEventListener("input", validationEmail);
+signupPass.addEventListener("input", validationPass);
