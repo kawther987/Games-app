@@ -29,7 +29,7 @@ function login() {
   for (var i = 0; i < userList.length; i++) {
     if (
       userList[i].email.toLowerCase() == email.toLowerCase() &&
-      userList[i].password.toLowerCase() == password.toLowerCase()
+      userList[i].password == password
     ) {
       localStorage.setItem("uName", userList[i].name);
       sayWelcome();

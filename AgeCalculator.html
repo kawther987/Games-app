@@ -3,24 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Captcha Generator</title>
-    <link
-      rel="shortcut icon"
-      href="./img/pink-cosmos.png"
-      type="image/x-icon"
-    />
-    <!-- google font -->
+    <title>Age Calculator</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap"
       rel="stylesheet"
     />
-
-    <!-- fontawesome file -->
     <link rel="stylesheet" href="./css/all.min.css" />
-    <!-- bootstrap css -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <!-- main css -->
-    <link rel="stylesheet" href="./css/capatcha.css" />
+    <link rel="stylesheet" href="./css/age.css" />
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/age.js" defer></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-sm fixed-top">
@@ -81,47 +74,21 @@
         </div>
       </div>
     </nav>
-    <section
-      class="wrapper min-vh-100 d-flex justify-content-center align-items-center"
-    >
+    <section>
       <div
-        class="box w-50 rounded-4 p-3 py-5 d-flex flex-column gap-3 justify-content-center align-items-center"
+        class="container min-vh-100 d-flex justify-content-center align-items-center"
       >
-        <h2 class="text-uppercase text-main fw-bold text-center">
-          Capatcha Generator
-        </h2>
-        <div class="d-flex gap-2 w-75 mx-auto">
-          <div class="capatcha-box w-100 position-relative">
-            <img
-              src="https://30daysofjs.netlify.app/97%20-%20captcha%20generator/assets/bg6.png"
-              alt="background"
-              class="h-100 w-100 object-fit-cover rounded border border-2 shadow-sm border-black"
-            />
-            <span
-              class="capatcha-text text-black fw-bold"
-              id="captchaText"
-            ></span>
+        <div class="calculator">
+          <h1 class="text-center"><span> Age Calculator</span></h1>
+          <div class="input-box">
+            <input type="date" id="date" />
+            <button class="btn btn-outline-success ageBtn fw-bold py-2 px-4">
+              Calculate
+            </button>
           </div>
-          <button type="button" class="btn btn-main" id="try">
-            <i class="fa-solid fa-arrow-rotate-right"></i>
-          </button>
+          <p id="result" class="text-center"></p>
         </div>
-        <form class="w-75 mx-auto position-relative">
-          <input
-            type="text"
-            class="form-control border-main"
-            placeholder="Enter Capatcha"
-            id="input"
-          />
-          <button class="btn btn-main" id="check" type="button">Check</button>
-        </form>
       </div>
     </section>
-    <!-- sweet alerlt -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- bootstarap js -->
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <!-- main js -->
-    <script src="./js/capatcha.js"></script>
   </body>
 </html>

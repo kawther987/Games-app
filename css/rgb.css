@@ -6,8 +6,8 @@ header {
 }
 nav {
   backdrop-filter: blur(8px);
-  box-shadow: -5px 2px 54px -9px #2d392d inset;
   font-family: "Rubik Bubbles";
+  background: #000;
 }
 .navbar-toggler:focus {
   box-shadow: none;

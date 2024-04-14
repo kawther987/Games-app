@@ -1,0 +1,79 @@
+body {
+  background-image: linear-gradient(#00000026, #00000052),
+    url("../img/elevated-view-flowers-keyboard-pink-backdrop.jpg");
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  background-position: fixed;
+  font-family: "Rubik Doodle Shadow", cursive;
+}
+::selection {
+  background-color: #521a5c;
+  color: #e34890;
+}
+
+nav {
+  backdrop-filter: blur(8px);
+  box-shadow: -5px 2px 54px -9px #2d392d inset;
+  font-family: "Rubik Bubbles";
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.container .calculator {
+  width: 100%;
+  max-width: 600px;
+}
+.calculator h1 {
+  font-size: 3.75rem;
+}
+.calculator h1 span {
+  color: #521a5c;
+  font-family: "Rubik Bubbles";
+}
+
+.input-box {
+  margin-block: 40px;
+  padding: 35px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.input-box input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.input-box input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  background-position: calc(100% - 10px);
+  background-size: 30px;
+  cursor: pointer;
+}
+
+#result {
+  font-size: 20px;
+}
+#result span {
+  color: #521a5c;
+  font-family: "Rubik Bubbles";
+}
+@media screen and (max-width: 776px) {
+  html {
+    font-size: 13px;
+  }
+}
